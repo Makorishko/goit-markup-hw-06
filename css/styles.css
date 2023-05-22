@@ -122,11 +122,9 @@ img {
   color: #404bbf;
 }
 
-.nav .list .link.active{
+.nav .list .link.active {
   color: #404bbf;
 }
-
-
 
 .link.active:after,
 nav .list .link:hover:after {
@@ -528,7 +526,7 @@ nav .list .link:hover:after {
 .social .list {
   gap: 16px;
 }
-.subtitle-social {
+.subtitle-footer {
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 16px;
@@ -619,4 +617,73 @@ nav .list .link:hover:after {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+/* Forms */
+
+.btn-subscribe {
+  background-color: var(--iris);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  font-family: 'Roboto', sans-serif;
+  padding: 8px 64px 8px 24;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-width: 165px;
+  min-height: 40px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+.form-subscribe {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.email-input {
+  width: 264px;
+  height: 40px;
+  background-color: #2e2f42;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color:#ffffff;
+  padding: 0 16px;
+  outline: none;
+}
+/* .email-input:focus ~ .email-label,
+.email-input:not(:focus):valid ~ .email-label{
+  top: -15px;
+
+} */
+
+
+
+
+.input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.email-label {
+  position: absolute;
+  padding: 0 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 0.5;
+  letter-spacing: 0.04em;
+  /* position: absolute;
+  pointer-events: none;
+  transition: 0.2s ease all; */
 }
