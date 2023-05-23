@@ -583,6 +583,7 @@ nav .list .link:hover:after {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   min-height: 576px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 .btn-modal {
   position: absolute;
@@ -618,7 +619,7 @@ nav .list .link:hover:after {
   visibility: hidden;
   pointer-events: none;
 }
-/* Forms */
+/* Forms footer */
 
 .btn-subscribe {
   background-color: var(--iris);
@@ -657,18 +658,10 @@ nav .list .link:hover:after {
   background-color: #2e2f42;
   border: 1px solid #ffffff;
   border-radius: 4px;
-  color:#ffffff;
+  color: #ffffff;
   padding: 0 16px;
   outline: none;
 }
-/* .email-input:focus ~ .email-label,
-.email-input:not(:focus):valid ~ .email-label{
-  top: -15px;
-
-} */
-
-
-
 
 .input-wrap {
   position: relative;
@@ -683,7 +676,77 @@ nav .list .link:hover:after {
   font-size: 12px;
   line-height: 0.5;
   letter-spacing: 0.04em;
-  /* position: absolute;
-  pointer-events: none;
-  transition: 0.2s ease all; */
+  transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email-input:focus + .email-label,
+.email-input:not(:placeholder-shown) + .email-label {
+  transform: translateY(-30px);
+}
+
+/* Forms Modal */
+
+.subtitle-modal {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.modal-input {
+  width: 360px;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 0 16px 0 38px;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 16px;
+}
+
+.modal-label {
+  color: var(--lightslate);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-bottom: 4px;
+  margin-top: 8px;
+}
+.modal-comment {
+  resize: none;
+  width: 360px;
+  height: 120px;
+  padding: 8px 16px;
+}
+::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  
+}
+.btn-send{
+  display: block;
+  background-color: var(--iris);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  margin: 0 auto;
+
 }
