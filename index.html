@@ -351,7 +351,7 @@
         </div>
         <div class="subscribe">
           <p class="subtitle-footer">Subscribe</p>
-          <form name="subscribe-form" class="form-subscribe">
+          <form name="subscribe-form" class="subscribe-form">
             <div class="input-wrap">
               <input type="mail" name="mail" id="subscribe-form" class="email-input" placeholder=" "/>
               <label for="subscribe-form" class="email-label">Email</label>
@@ -400,12 +400,16 @@
           <div>
           <textarea class="modal-comment" name="modal-comment" id="modal-comment" placeholder="Text input"></textarea>
        </div>
-          <label for="modal-email">
-            <div>
-            <input class="" type="checkbox" name="modal-agreement">
-            <span>I accept the terms and conditions of the <a href="">Privacy Policy</a></span>
-            </div>
-          </label>
+         
+         
+          <label class="check">
+            <input class="check-input" type="checkbox" name="modal-agreement">
+            <span class="check-box"></span>
+            <span class="checkbox-text">I accept the terms and conditions of the <a class="agreement-link" href="">Privacy Policy</a></span>
+          </label>  
+          
+         
+         
           <button type="submit" class="btn-send">Send</button>
         </form>
       </div>
